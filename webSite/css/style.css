@@ -85,8 +85,8 @@ a:active{
 
 .atpakal{
     position: relative;
-    top:50px;
-    left:720px;
+    top:55px;
+    left:790px;
 }
 
 .pholder{
@@ -121,7 +121,7 @@ footer {
     box-sizing: border-box;
 }
 
-.chatContainer{
+div.chatContainer{
     width:780px;
     height: 518px;
     border: 2px solid #ddd;
@@ -129,8 +129,6 @@ footer {
     left: 500px;
     background-color: hsl(200,250%,10%);
     color: white;
-
-
 }
 
 .chatContainer >.chatHeader{
@@ -172,8 +170,171 @@ footer {
 
 }
 
+.profilePhoto img{
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    left:10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    float: left;
+}
 
+.desc{
+    text-align: center;
+    float: left;
+    position: absolute;
+    bottom:120px;
+    left: 100px;
+}
 
+.transparent{
+    width: 400px;
+    height:400px;
+    background-color: darkslategrey;
+    position: absolute;
+    left: 515px;
+    top:100px;
+    border-radius: 25px;
+}
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    position: relative;
+    left:500px;
+    top: 0px;
+}
 
+div.gallery:hover {
+    border: 1px solid #777;
+}
 
+div.gallery img {
+    width: 100%;
+    height: 150px;
+}
+
+div.description {
+    padding: 15px;
+    text-align: center;
+
+}
+
+div.friendsGallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    position: relative;
+    left:500px;
+    top: 50px;
+}
+
+div.friendsGallery:hover {
+    border: 1px solid #777;
+}
+
+div.friendsGallery img {
+    width: 100%;
+    height: 150px;
+}
+
+.page{
+    position:absolute;
+    left:1200px;
+    top:600px;
+    font-size: 16px;
+    color: wheat;
+}
+
+#searchbox {
+    background-color: floralwhite;
+    border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;
+    width: 350px;
+    height: 35px;
+    padding: 10px;
+    margin: 100px auto 50px;
+    overflow: hidden;
+    position: absolute;
+    top:10px;
+    left:900px;
+    height: 50px;
+}
+
+#search,#submit{
+    border-radius: 10px;
+    height:30px;
+}
+
+#submit{
+    background-color: darkslategray;
+    color:white;
+    width: 60px;
+}
+.parSevi{
+    position:relative;
+    text-align: center;
+}
+
+.parSevi h3{
+    color:antiquewhite;
+}
+
+ul.messages {
+
+    list-style-type: none;
+    position: relative;
+    right: 11px;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background: darkslategrey;
+}
+
+ul.messages:nth-child(3){
+    background: dimgray;
+    position: relative;
+    top: 100px;
+}
+
+li.messageList a {
+    float:left;
+    display: inline-block;
+    color: #FFE4B5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: italic;
+}
+
+li.messageList a:hover {
+    background-color: dimgrey;
+}
+
+.messages >.bn {
+    display: inline-block;
+    color: darkslategrey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: italic;
+}
+
+.messages >.bn1 {
+    display: inline-block;
+    color: darkslategrey;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: italic;
+    position: relative;
+    float: right;
+}
