@@ -14,6 +14,10 @@ $template = new template();
         <?php template::getMenu(); ?>
 
 
+    <div class="profilePhoto">
+        <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
+        <p class="desc" name="profileName">Vārds Uzvārds</p>
+    </div>
 
         <div class="chatContainer">
             <div class="chatHeader">
