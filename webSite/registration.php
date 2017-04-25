@@ -46,10 +46,11 @@ $template = new template();
     </div> <br>
 
         <input class="button" type="submit" value="Reģistrēties" name = "saglabat">
+
+          <a href="index.php" class="atpakal">Atpakaļ</a>
+
 </form>
-        <div class="atpakal">
-             <a href="index.php">Atpakaļ</a>
-        </div>
+
 
      <footer>
          <p>Izveidojuši: <br> sdasdasd, sadasdd, asdasds, sdasdasd</p>
