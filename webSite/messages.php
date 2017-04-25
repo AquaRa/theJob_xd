@@ -16,13 +16,13 @@ $template = new template();
     <ul class="messages">
         <li class="messageList"><a href="">Saņemtās</a></li>
         <li class="messageList"><a href="">Nosūtītās</a></li>
-        <li class="messageList"><a href="">Nosūtīt</a></li>
+        <li class="messageList"><a href="sakums.php">Nosūtīt</a></li>
     </ul>
 
-<ul class="messages">
+<ul class="messages button">
     <li class="bn"><a href="" style="color: blanchedalmond" name="name">Vārds &nbsp Uzvārds</a></li>
-    <li class="bn1"><a href="" style="color: blanchedalmond" name="sendMessage">Atbildēt</a></li>
-    <li class="bn1"><a href="" style="color: blanchedalmond" name="deleteMessage">Dzēst</a></li>
+    <li class="bn1"><input type="submit" class="button" value="Atbildēt" name="respond"></li>
+    <li class="bn1"><input type="submit" class="button" value="Dzēst" name="deleteMessage"></li>
 </ul>
 
 
