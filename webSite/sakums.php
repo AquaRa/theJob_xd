@@ -13,48 +13,60 @@ $template = new template();
 <body>
     <?php template::getMenu(); ?>
 
-    <div class="profilePhoto">
-        <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
-        <p class="desc" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name="editProfile">Labot profilu</a></p>
+    <div class="container">
+    <div class="row">
+        <form class="searchbox col-md-3" action="">
+            <input id="search" type="text" placeholder="Ievadi vārdu">
+            <input id="submit" type="submit" value="Meklēt">
+        </form>
     </div>
 
-    <form id="searchbox" action="">
-        <input id="search" type="text" placeholder="Ievadi vārdu">
-        <input id="submit" type="submit" value="Search">
-    </form>
+        <div class="row">
+    <div class="col-md-3 profilePhoto">
+        <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
+        <div class="description" name="">Vārds Uzvārds</div>
+    </div> <br>
 
-<div class="friendsGallery">
+
+
+
+<div class="col-md-3 col-sm-11 friendsGallery">
     <a href="">
         <img src="img/ram.jpg" alt="profils">
     </a>
-    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name="sendMessage">Nosūtīt vēstuli</a></div>
+    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name=" name="sendMessage">Nosūtīt vēstuli</a></div>
 </div>
 
-<div class="friendsGallery">
+<div class="col-md-3 col-sm-11 friendsGallery">
     <a href="">
         <img src="" alt="profils">
     </a>
-    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name="sendMessage">Nosūtīt vēstuli</a></div>
+    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name=" name="sendMessage">Nosūtīt vēstuli</a></div>
 </div>
 
 
-<div class="friendsGallery">
+<div class="col-md-3 col-sm-11 friendsGallery">
     <a href="">
         <img src="" alt="profils">
     </a>
-    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name="sendMessage">Nosūtīt vēstuli</a></div>
+    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name=" name="sendMessage">Nosūtīt vēstuli</a></div>
 </div>
 
-<div class="friendsGallery">
+<div class="col-md-3 col-sm-11 friendsGallery">
     <a href="">
         <img src="" alt="profils">
     </a>
-    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name="sendMessage">Nosūtīt vēstuli</a></div>
+    <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name=" name="sendMessage">Nosūtīt vēstuli</a></div>
 </div>
+        </div>
+    </div>
+
+
 
 <div class="page">
     <p>Lapa</p> <a href="" style="color: blanchedalmond">1</a>&nbsp<a href="" style="color: blanchedalmond">2</a>
 </div>
+
 
     <?php template::getJsLibs(); ?>
 </body>
