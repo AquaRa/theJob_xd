@@ -16,7 +16,7 @@ $template = new template();
 
    <header></header>
 
-   <div class='transparent'></div>
+
             <form class="logIn">
                 <h4>Pieslēgšanās logs</h4> <br>
 
