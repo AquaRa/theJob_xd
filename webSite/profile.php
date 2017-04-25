@@ -13,22 +13,23 @@ $template = new template();
 <body>
 <?php template::getMenu(); ?>
 
-<div class="profilePhoto">
-    <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
-    <p class="desc" name="">Vārds Uzvārds</p>
-</div>
-
 <div class="container">
+    <div class="row">
 
-<div class="row">
-  <div class="col-md-3 gallery">
+<div class="col-md-3 profilePhoto">
+    <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
+    <div class="description" name="">Vārds Uzvārds<br><br><a href="correctProfile.php" style="color: blanchedalmond; name=" name="correct">Labot profilu</a></div>
+  </div> <br>
+
+
+  <div class="col-md-3 col-sm-11 gallery">
     <a href="">
         <img src="img/ram.jpg" alt="profils">
     </a>
     <div class="description" name="">Vārds Uzvārds</div>
-</div>
+    </div>
 
-<div class="col-md-3 gallery">
+<div class="col-md-3 col-sm-11 gallery">
     <a href="">
         <img src="" alt="profils">
     </a>
@@ -36,30 +37,21 @@ $template = new template();
 </div>
 
 
-<div class="col-md-3 gallery">
+<div class="col-md-3 col-sm-11 gallery">
     <a href="">
         <img src="" alt="profils">
     </a>
     <div class="description" name="">Vārds Uzvārds</div>
 </div>
 
-<div class="col-md-3 gallery">
+<div class="col-md-3 col-sm-11 gallery">
     <a href="">
         <img src="" alt="profils">
     </a>
     <div class="description" name="">Vārds Uzvārds</div>
   </div>
-</div>
 
-    <div class="row">
-        <div class="col-md-3 gallery">
-            <a href="">
-                <img src="" alt="profils">
-            </a>
-            <div class="description" name="">Vārds Uzvārds</div>
-        </div>
-
-        <div class="col-md-3 gallery">
+        <div class="col-md-3 col-sm-11 gallery">
             <a href="">
                 <img src="" alt="profils">
             </a>
@@ -67,29 +59,45 @@ $template = new template();
         </div>
 
 
-        <div class="col-md-3 gallery">
+        <div class="col-md-3 col-sm-11 gallery">
             <a href="">
                 <img src="" alt="profils">
             </a>
             <div class="description" name="">Vārds Uzvārds</div>
         </div>
 
-        <div class="col-md-3 gallery">
+
+        <div class="col-md-3 col-sm-11 gallery">
             <a href="">
                 <img src="" alt="profils">
             </a>
             <div class="description" name="">Vārds Uzvārds</div>
+        </div>
+
+        <div class="col-md-3 col-sm-11 gallery">
+            <a href="">
+                <img src="" alt="profils">
+            </a>
+            <div class="description" name="">Vārds Uzvārds</div>
+        </div>
+
+        </div>
+    </div>
+<br>
+
+    <div class="container">
+        <div class="row">
+             <div class="col-md-3 parSevi">
+                <h3>Par sevi:</h3>
+                <p name="parSevi">bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla</p
+
+             </div>
         </div>
     </div>
 
-    <div class="parSevi">
-        <h3>Par sevi:</h3>
-        <p name="parSevi">bla bla bla </p>
+
+
     </div>
-
-
-</div>
-
 
 
 <?php template::getJsLibs(); ?>
