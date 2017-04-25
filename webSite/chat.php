@@ -13,11 +13,14 @@ $template = new template();
     <body>
         <?php template::getMenu(); ?>
 
+<div class="container">
+    <div class="row">
 
-    <div class="profilePhoto">
-        <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
-        <p class="desc" name="profileName">Vārds Uzvārds</p>
+    <div class="col-md-3 profilePhoto">
+        <a href="" data-lightbox="gallery"><img class="img-responsive" src="" alt="profila bilde" /></a>
+        <p class="desc" name="profileName">Vārds Uzvārds</p><br>
     </div>
+
 
         <div class="chatContainer">
             <div class="chatHeader">
@@ -33,8 +36,8 @@ $template = new template();
             </div>
         </div>
 
-
-
+        </div>
+    </div>
 
 
         <?php template::getJsLibs(); ?>
