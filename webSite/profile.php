@@ -18,13 +18,13 @@ $template = new template();
 
 <div class="col-md-3 profilePhoto">
     <a href="" data-lightbox="gallery"><img src="" alt="profila bilde" /></a>
-    <div class="description" name="">Vārds Uzvārds<br><br><a href="correctProfile.php" style="color: blanchedalmond; name=" name="correct">Labot profilu</a></div>
+    <div class="description" name="">Vārds Uzvārds<br><br><a href="correctProfile.php" style="color: blanchedalmond; name=" name="correct"><font color="#daa520">Labot profilu</font></a></div>
   </div> <br>
 
 
   <div class="col-md-3 col-sm-11 gallery">
     <a href="">
-        <img src="img/ram.jpg" alt="profils">
+        <img src="" alt="profils">
     </a>
     <div class="description" name="">Vārds Uzvārds</div>
     </div>
@@ -98,7 +98,6 @@ $template = new template();
 
 
     </div>
-
 
 <?php template::getJsLibs(); ?>
 </body>
