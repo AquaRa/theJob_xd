@@ -14,7 +14,7 @@ $template = new template();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <h1><font color="black" size="5px">Dzēst lietotāju:</font></h1>
+                    <h1><font color="#daa520" size="5px">Dzēst lietotāju:</font></h1>
                         <input type="submit" class="button" value="Dzēst" name="deleteUser">
                 </div>
             </div>
