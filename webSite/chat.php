@@ -16,15 +16,14 @@ $template = new template();
 <div class="container">
     <div class="row">
 
-    <div class="col-md-3 profilePhoto">
-        <a href="" data-lightbox="gallery"><img class="img-responsive" src="" alt="profila bilde" /></a>
-        <p class="desc" name="profileName">Vārds Uzvārds</p><br>
-    </div>
-
-
         <div class="chatContainer">
+
             <div class="chatHeader">
                 <h3><font color="#BDB76B">Sveicināti</font></h3>
+            </div>
+            <div class="col-md-3 messagePhoto">
+                <a href="" data-lightbox="gallery"><img class="img-responsive"src="" alt="profila bilde" /></a>
+                <p class="desc" name="profileName">Vārds Uzvārds</p><br>
             </div>
             <div class="chatMessages"></div>
             <div class="chatBottom">
