@@ -42,7 +42,7 @@ $template = new template();
 
 
     <div>Epasts:<br>
-        <input id="email" placeholder="e-pasts" class="pholder" type="text" name = "epasts">
+        <input id="email" placeholder="E-pasts" class="pholder" type="text" name = "epasts">
     </div> <br>
 
         <input class="button" type="submit" value="Reģistrēties" name = "saglabat">
