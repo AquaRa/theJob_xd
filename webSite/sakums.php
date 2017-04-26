@@ -32,7 +32,7 @@ $template = new template();
 
 <div class="col-md-3 col-sm-11 friendsGallery">
     <a href="">
-        <img src="img/ram.jpg" alt="profils">
+        <img src="http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sloth-beach-upside-down.jpg" alt="profils">
     </a>
     <div class="description" name="profileName">Vārds Uzvārds<br><a href="" style="color: blanchedalmond; name=" name="sendMessage">Nosūtīt vēstuli</a></div>
 </div>
@@ -64,9 +64,8 @@ $template = new template();
 
 
 <div class="page">
-    <p>Lapa</p> <a href="" style="color: blanchedalmond">1</a>&nbsp<a href="" style="color: blanchedalmond">2</a>
+    <p>Lapa</p> <a href="" style="color: blanchedalmond"><font color="white">1</a>&nbsp<a href="" style="color: blanchedalmond"><font color="white">2</a></font>
 </div>
-
 
     <?php template::getJsLibs(); ?>
 </body>
