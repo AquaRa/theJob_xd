@@ -53,7 +53,7 @@ $template = new template();
 
 
      <footer>
-         <p>Izveidojuši: <br> sdasdasd, sadasdd, asdasds, sdasdasd</p>
+         <p>Izveidojuši: <br> RAM</p>
      </footer>
 
 
