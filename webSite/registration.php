@@ -1,5 +1,5 @@
 <?php
-include('classes/template.php');
+require_once 'core/Init.php';
 $template = new template();
 ?>
 
@@ -16,7 +16,7 @@ $template = new template();
 
  </header>
 
-  <form  class="forma">
+  <form  class="forma" action="register.php" method="POST">
 
     <br><h4>Reģistrācijas logs</h4>
 

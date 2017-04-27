@@ -1,5 +1,7 @@
 <?php
-include('classes/template.php');
+require_once 'core/Init.php';
+
+
 $template = new template();
 ?>
 

@@ -1,6 +1,13 @@
 <?php
-include('classes/template.php');
+require_once 'core/Init.php';
 $template = new template();
+
+if(isset($_SESSION['id'])) {
+    $host  = $_SERVER['HTTP_HOST'];
+    $url   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+    header("Location: http://$host$url/sakums.php");
+}
+
 ?>
 
 <!DOCTYPE html>
