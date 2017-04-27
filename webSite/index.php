@@ -24,7 +24,7 @@ if(isset($_SESSION['id'])) {
    <header></header>
 
 
-            <form class="logIn">
+            <form class="logIn" action="login.php" method="post">
                 <h4>Pieslēgšanās logs</h4> <br>
 
                 <div>Lietotājvārds:<br>

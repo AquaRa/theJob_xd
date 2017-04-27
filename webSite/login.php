@@ -18,8 +18,8 @@ IF (isset($_SESSION['username'])) {
     }
 }
 
-$usr = $_POST['username'];
-$pw = $_POST['password'];
+$usr = $_POST['lietotajvards'];
+$pw = $_POST['parole'];
 
 if($db->usernameInUser($usr)) {
   if ($db->comparePW($pw, $db->getUserIDbyUsername($username))) {
