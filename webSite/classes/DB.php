@@ -1,10 +1,6 @@
 <?php
-
 class DB{
-
 	private $pdo, $sth;
-
-
 	public function __construct(){
 		try {
 			$this->pdo = new PDO('mysql:host='. Config::get("mysql/host") .';dbname='. Config::get("mysql/dbName"), Config::get("mysql/username"), Config::get("mysql/password"));
@@ -12,10 +8,7 @@ class DB{
 		} catch(PDOException $e) {
 	    	echo $sql . "<br>" . $e->getMessage();
 	    }
-
-
 	}
-
 	public function addUser($vards, $uzvards, $lietotajvards, $parole, $epasts) {
 		$hashedPW = MD5($lietotajvards);
 		$datums = date("Y-m-d H:i:s");
@@ -24,7 +17,6 @@ class DB{
 		$sth = $this->pdo->prepare($sql);
 		$sth->execute($params);
 	}
-
 	public function getUserIDbyUsername($userName) {
 		//print_r($userName);
 		$sql = "SELECT id FROM lietotaji WHERE lietotajvards = ?";
@@ -45,7 +37,6 @@ class DB{
 		$result = $result['id'];
 		return $result;
 	}
-
 	public function getUserIDbyEmail($email) {
 		$sql = "SELECT id FROM lietotaji WHERE epasts = ?";
 		$sth = $this->pdo->prepare($sql);
@@ -55,37 +46,53 @@ class DB{
 		$result = $result['id'];
 		return $result;
 	}
-
 	public function usernameInUse($userName) {
 		if($this->getUserIDbyUsername($userName)) {
 			return true;
 		}
 		return false;
 	}
-
 	public function deleteUser($userID) {
 		$sql = "DELETE FROM lietotaji WHERE id = ?";
 		$sth = $this->pdo->prepare($sql);
 		$sth->bindValue(1,$userID);
 		$sth->execute();
 	}
-
 	public function emailInUse($email) {
 		if($this->getUserIDbyEmail($email)) {
 			return true;
 		}
 		return false;
 	}
-
 	/*public function editUser($userID, $params = array()) {
 		if (count($params)) {
-
 			$result = $this->updateUser();
 		}
 		return false;
 	}*/
-
 	/*private function updateUser() {
 		return true;
 	}*/
+/*
+public function getDataForSession($userID) {
+	$sql = "SELECT id, lietotajvards, vards, uzvards, epasts, tiesibas FROM lietotaji WHERE id = ?";
+	$sth = $pdo->prepare($sql);
+	$sth->bindValue($userID);
+
+	$sth->execute();
+	
+	return $sth->fetch(PDO::FETCH_ASSOC);
+}
+
+public funtion comparePW($password, $userID) {
+   $sql = 'SELECT parole FROM lietotaji WHERE id = ?'
+        
+        $sth->prepare($sql);
+        $sth->bindValue(1,$userID);
+        $sth->execute();
+  if (MD5($password) == $pwInDB) {
+      return true;
+    }
+  return false;
+}*/
 }
